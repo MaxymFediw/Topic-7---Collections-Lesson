@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Topic_7___Collections_Lesson
@@ -17,12 +18,12 @@ namespace Topic_7___Collections_Lesson
             ranNum = Gen.Next(0, 101);
 
             int[] numbers = new int[31];
-            numbers[1] = ranNum;
+            numbers[0] = ranNum;
+           
+           
 
-
-
-            for (int i = 0; i < numbers.Length; i++)
-                Console.WriteLine("Item number: " + numbers[1]);
+            //for (int i = 0; i < numbers.Length; i++)
+            //    Console.WriteLine("Item number: " + numbers[i]);
 
             for (int i = 0; i < numbers.Length; i++)
                 Console.WriteLine("Item number " + i + ": " + numbers[i]);
