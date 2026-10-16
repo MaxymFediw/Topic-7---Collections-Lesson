@@ -12,6 +12,20 @@ namespace Topic_7___Collections_Lesson
         {
 
 
+            Random Gen = new Random();
+            int ranNum;
+            ranNum = Gen.Next(0, 101);
+
+            int[] numbers = new int[31];
+            numbers[1] = ranNum;
+
+
+
+            for (int i = 0; i < numbers.Length; i++)
+                Console.WriteLine("Item number: " + numbers[1]);
+
+            for (int i = 0; i < numbers.Length; i++)
+                Console.WriteLine("Item number " + i + ": " + numbers[i]);
 
 
 
